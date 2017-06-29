@@ -1,0 +1,5 @@
+1. Có bao nhiêu học sinh mượn sách trong năm 2017?
+---------------------------------------------------
+SELECT count(DISTINCT user_id)
+FROM use_book
+WHERE YEAR(START)=2017;
