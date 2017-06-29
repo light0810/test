@@ -1,0 +1,5 @@
+2.  Có bao nhiêu học sinh mượn sách mà bị quá hạn trong năm 2016 ?
+------------------------------------------------------------------
+Select count(distinct user_id)
+From use_book
+Where `end` < `end actual` and year(`end`)=2016;
