@@ -1,0 +1,5 @@
+4. có bao nhiêu sách k được trả đúng hạn ?*/
+-------------------------------
+Select count(distinct book_id)
+From use_book
+Where `end`<`end actual`;
